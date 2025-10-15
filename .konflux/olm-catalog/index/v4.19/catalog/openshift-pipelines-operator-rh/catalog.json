@@ -14938,7 +14938,7 @@
     "schema": "olm.bundle",
     "name": "openshift-pipelines-operator-rh.v1.20.0",
     "package": "openshift-pipelines-operator-rh",
-    "image": "quay.io/openshift-pipeline/pipelines-operator-bundle@sha256:6a3b5f700d5936a21edc1fb78b19dec2130c1d3a0588ee87eee3e1ecdd48ba56",
+    "image": "quay.io/openshift-pipeline/pipelines-operator-bundle@sha256:a030883dff48fbccd7437617edfff73e69d8529610c4bb9641c9d25fba732dea",
     "properties": [
         {
             "type": "olm.gvk",
@@ -15660,19 +15660,19 @@
         },
         {
             "name": "IMAGE_ADDONS_OPC",
-            "image": "quay.io/openshift-pipeline/pipelines-opc-rhel9@sha256:c1bee4a2bb495de6d4da962b6e7b2447caa51cc36c3005e4083bd31420ef5102"
+            "image": "quay.io/openshift-pipeline/pipelines-opc-rhel9@sha256:de6e4af6fcf1a609fae65a5ccc4534b753feb3d3aaebb9a36106d1be8b677873"
         },
         {
             "name": "",
-            "image": "quay.io/openshift-pipeline/pipelines-operator-bundle@sha256:6a3b5f700d5936a21edc1fb78b19dec2130c1d3a0588ee87eee3e1ecdd48ba56"
+            "image": "quay.io/openshift-pipeline/pipelines-operator-bundle@sha256:a030883dff48fbccd7437617edfff73e69d8529610c4bb9641c9d25fba732dea"
         },
         {
             "name": "IMAGE_PIPELINES_PROXY",
-            "image": "quay.io/openshift-pipeline/pipelines-operator-proxy-rhel9@sha256:1cc6cc5b96b060b0a55c6188d414c99f6f87ca1de650f734b783706fe7b33417"
+            "image": "quay.io/openshift-pipeline/pipelines-operator-proxy-rhel9@sha256:ad77c64e820c7047457297a095cd5c174a09cfc49b9ff41c45bdf1719175fc26"
         },
         {
             "name": "TEKTON_OPERATOR_WEBHOOK",
-            "image": "quay.io/openshift-pipeline/pipelines-operator-webhook-rhel9@sha256:2d496752b19f765f1ea36ec94b873ebd8fa604764a56aa67d3ed94b33e5fe75c"
+            "image": "quay.io/openshift-pipeline/pipelines-operator-webhook-rhel9@sha256:80f546df7374b2ebd3b5350c92f717717e2911bb3a7121d0ef3b0a761830af0a"
         },
         {
             "name": "IMAGE_PAC_PAC_CLI",
@@ -15712,11 +15712,11 @@
         },
         {
             "name": "OPENSHIFT_PIPELINES_OPERATOR_LIFECYCLE",
-            "image": "quay.io/openshift-pipeline/pipelines-rhel9-operator@sha256:161df929e2bd4c5acff594be31d5458365de5ae0d2189bb2f647c3fc6657fa28"
+            "image": "quay.io/openshift-pipeline/pipelines-rhel9-operator@sha256:5e8dd2201c6c734416721878c4b0452d6a82b24580939d3041f576cdba58b928"
         },
         {
             "name": "OPENSHIFT_PIPELINES_OPERATOR_CLUSTER_OPERATIONS",
-            "image": "quay.io/openshift-pipeline/pipelines-rhel9-operator@sha256:161df929e2bd4c5acff594be31d5458365de5ae0d2189bb2f647c3fc6657fa28"
+            "image": "quay.io/openshift-pipeline/pipelines-rhel9-operator@sha256:5e8dd2201c6c734416721878c4b0452d6a82b24580939d3041f576cdba58b928"
         },
         {
             "name": "IMAGE_PIPELINES_ARG__SIDECARLOGRESULTS_IMAGE",
