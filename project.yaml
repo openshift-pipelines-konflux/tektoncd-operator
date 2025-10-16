@@ -83,7 +83,7 @@ images:
   - name: IMAGE_PIPELINES_PROXY
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-proxy-rhel9@sha256:3be6bfb5900ed447619dc65800b135432670e1e4f5ec62ed5b390258338a42f6
   - name: TEKTON_OPERATOR_WEBHOOK
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-webhook-rhel9@sha256:6641d4cda295ea1bfaca9462cec287ccae5a56eca8b493eb086c803f29afff56
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-webhook-rhel9@sha256:a262cb599df48649df195deb704784c0748c7f7e8f8cd092aca87cdf888df947
   # cache
   - name: IMAGE_ADDONS_CACHE_UPLOAD
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/cache-rhel9@sha256:de54c42aed788d6b05068d8484c45502ca50c11dc982258cd0e55c8e93219973
