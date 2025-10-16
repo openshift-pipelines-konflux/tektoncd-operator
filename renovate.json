@@ -8,7 +8,9 @@
   ],
   "addLabels": [
     "/approve",
-    "/lgtm"
+    "/lgtm",
+    "konflux",
+    "mintmaker"
   ],
   "packageRules": [
     {
