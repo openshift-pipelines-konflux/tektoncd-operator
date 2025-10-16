@@ -8,8 +8,7 @@
   ],
   "addLabels": [
     "/approve",
-    "/lgtm",
-    "konflux"
+    "/lgtm"
   ],
   "packageRules": [
     {
