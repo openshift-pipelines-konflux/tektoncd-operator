@@ -14,7 +14,6 @@ metadata:
       (( ".konflux/olm-catalog/index/***".pathChanged()) ||
       ".konflux/olm-catalog/index/v4.15/Dockerfile.catalog".pathChanged() || ".tekton/*build*.yaml".pathChanged() ||
       ".tekton/tektoncd-operator-main-index-4.15-pull-request.yaml".pathChanged())
-  creationTimestamp: null
   labels:
     appstudio.openshift.io/application: openshift-pipelines-index-4-15-main
     appstudio.openshift.io/component: tektoncd-operator-main-index-4-15
