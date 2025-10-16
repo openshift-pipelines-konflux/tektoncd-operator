@@ -12,7 +12,7 @@ metadata:
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
       == "main" &&
       ("upstream/***".pathChanged() || ".konflux/patches/***".pathChanged() || ".konflux/rpms/***".pathChanged() ||
-      ".konflux/dockerfiles/proxy.Dockerfile".pathChanged() ||
+      ".konflux/dockerfiles/proxy.Dockerfile".pathChanged() || ".tekton/*build*.yaml".pathChanged() ||
       ".tekton/tektoncd-operator-main-proxy-push.yaml".pathChanged())
   creationTimestamp: null
   labels:

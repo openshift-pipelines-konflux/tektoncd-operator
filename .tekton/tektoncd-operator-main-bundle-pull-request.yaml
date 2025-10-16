@@ -14,7 +14,6 @@ metadata:
       ((".konflux/patches/***".pathChanged() || ".konflux/olm-catalog/bundle/***".pathChanged()) ||
       ".konflux/olm-catalog/bundle/Dockerfile".pathChanged() || ".tekton/*build*.yaml".pathChanged() ||
       ".tekton/tektoncd-operator-main-bundle-pull-request.yaml".pathChanged())
-  creationTimestamp: null
   labels:
     appstudio.openshift.io/application: openshift-pipelines-operator-main
     appstudio.openshift.io/component: tektoncd-operator-main-bundle

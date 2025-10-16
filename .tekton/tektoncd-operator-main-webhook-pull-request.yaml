@@ -14,7 +14,6 @@ metadata:
       ("upstream/***".pathChanged() || ".konflux/patches/***".pathChanged() || ".konflux/rpms/***".pathChanged() ||
       ".konflux/dockerfiles/webhook.Dockerfile".pathChanged() || ".tekton/*build*.yaml".pathChanged() ||
       ".tekton/tektoncd-operator-main-webhook-pull-request.yaml".pathChanged())
-  creationTimestamp: null
   labels:
     appstudio.openshift.io/application: openshift-pipelines-operator-main
     appstudio.openshift.io/component: tektoncd-operator-main-webhook
