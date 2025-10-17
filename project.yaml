@@ -63,7 +63,7 @@ images:
     value: registry.redhat.io/openshift-pipelines/pipelines-serve-tkn-cli-rhel9@sha256:d055d2b35a663aef3e1aafdbed0b12957867c0670c946ebae66e9c44a768bda2
   # manual-approval-gate
   - name: IMAGE_MAG_MANUAL_APPROVAL
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/manual-approval-gate-webhook-rhel9@sha256:19fd0dfb6876b07665eb509e420ce2755f87ea04dd966f27d3eddfdb84e5a513
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/manual-approval-gate-webhook-rhel9@sha256:bb20979bd1b418e5d1fe8776c7508da95eacc18d34e27e759b56bdec5a8d9823
   - name: IMAGE_MAG_TEKTON_TASKGROUP_CONTROLLER
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/manual-approval-gate-controller-rhel9@sha256:5b3456193e7e7e470ea906f6fd6f3a1dbde38fae69c272d696d8a9bff75a6371
   # pipelines-as-code
