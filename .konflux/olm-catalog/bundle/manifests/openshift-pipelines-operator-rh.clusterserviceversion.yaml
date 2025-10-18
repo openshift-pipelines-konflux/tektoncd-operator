@@ -1285,7 +1285,7 @@ spec:
                       - name: IMAGE_ADDONS_TKN_CLI_SERVE
                         value: registry.redhat.io/openshift-pipelines/pipelines-serve-tkn-cli-rhel9@sha256:d055d2b35a663aef3e1aafdbed0b12957867c0670c946ebae66e9c44a768bda2
                       - name: IMAGE_CHAINS_TEKTON_CHAINS_CONTROLLER
-                        value: quay.io/openshift-pipeline/pipelines-chains-controller-rhel9@sha256:bc38da6e7e3a38d22078a05d76c124340e2e7f58736620d6262dbda9c24b3765
+                        value: quay.io/openshift-pipeline/pipelines-chains-controller-rhel9@sha256:d79ecf761eced88870a7f8da67e49bb5087454f2d04d80072559e0465efec72d
                       - name: IMAGE_RESULTS_POSTGRES
                         value: registry.redhat.io/rhel9/postgresql-13@sha256:36647bd6d50d2e0e9c99ecf190bd515577c7ce9476e49d927c4d4065011e3441
                       - name: IMAGE_HUB_TEKTON_HUB_DB_MIGRATION
@@ -1295,9 +1295,9 @@ spec:
                       - name: IMAGE_HUB_TEKTON_HUB_UI
                         value: quay.io/openshift-pipeline/pipelines-hub-ui-rhel9@sha256:cdf80ed9b9a7daf2a35796001099cbfba396b28997d4be8aa62064aff970deec
                       - name: IMAGE_MAG_TEKTON_TASKGROUP_CONTROLLER
-                        value: quay.io/openshift-pipeline/pipelines-manual-approval-gate-controller-rhel9@sha256:5b3456193e7e7e470ea906f6fd6f3a1dbde38fae69c272d696d8a9bff75a6371
+                        value: quay.io/openshift-pipeline/pipelines-manual-approval-gate-controller-rhel9@sha256:ca747c93ed4ac2175652f5a2c2d03e42c179863c7ea41de935ae1b77b7a127d1
                       - name: IMAGE_MAG_MANUAL_APPROVAL
-                        value: quay.io/openshift-pipeline/pipelines-manual-approval-gate-webhook-rhel9@sha256:19fd0dfb6876b07665eb509e420ce2755f87ea04dd966f27d3eddfdb84e5a513
+                        value: quay.io/openshift-pipeline/pipelines-manual-approval-gate-webhook-rhel9@sha256:bb20979bd1b418e5d1fe8776c7508da95eacc18d34e27e759b56bdec5a8d9823
                       - name: IMAGE_PRUNER_CONTROLLER
                         value: quay.io/openshift-pipeline/pipelines-pruner-controller-rhel9@sha256:589d51ee88c8bf386db02a3d7f89d78cc66a9bd9c7ab7e2ce7c56defea19d39b
                       - name: IMAGE_PAC_PAC_CONTROLLER
@@ -1547,7 +1547,7 @@ spec:
       name: IMAGE_ADDONS_TKN_CLI_SERVE
     - image: quay.io/openshift-pipeline/pipelines-operator-webhook-rhel9@sha256:0c68ce115f9537f9044ae7e9c7d31d173ece356bc54e6e08371a270dd96b1302
       name: TEKTON_OPERATOR_WEBHOOK
-    - image: quay.io/openshift-pipeline/pipelines-chains-controller-rhel9@sha256:bc38da6e7e3a38d22078a05d76c124340e2e7f58736620d6262dbda9c24b3765
+    - image: quay.io/openshift-pipeline/pipelines-chains-controller-rhel9@sha256:d79ecf761eced88870a7f8da67e49bb5087454f2d04d80072559e0465efec72d
       name: IMAGE_CHAINS_TEKTON_CHAINS_CONTROLLER
     - image: registry.redhat.io/rhel9/postgresql-13@sha256:36647bd6d50d2e0e9c99ecf190bd515577c7ce9476e49d927c4d4065011e3441
       name: IMAGE_HUB_TEKTON_HUB_DB
@@ -1559,9 +1559,9 @@ spec:
       name: IMAGE_HUB_TEKTON_HUB_API
     - image: quay.io/openshift-pipeline/pipelines-hub-ui-rhel9@sha256:cdf80ed9b9a7daf2a35796001099cbfba396b28997d4be8aa62064aff970deec
       name: IMAGE_HUB_TEKTON_HUB_UI
-    - image: quay.io/openshift-pipeline/pipelines-manual-approval-gate-controller-rhel9@sha256:5b3456193e7e7e470ea906f6fd6f3a1dbde38fae69c272d696d8a9bff75a6371
+    - image: quay.io/openshift-pipeline/pipelines-manual-approval-gate-controller-rhel9@sha256:ca747c93ed4ac2175652f5a2c2d03e42c179863c7ea41de935ae1b77b7a127d1
       name: IMAGE_MAG_TEKTON_TASKGROUP_CONTROLLER
-    - image: quay.io/openshift-pipeline/pipelines-manual-approval-gate-webhook-rhel9@sha256:19fd0dfb6876b07665eb509e420ce2755f87ea04dd966f27d3eddfdb84e5a513
+    - image: quay.io/openshift-pipeline/pipelines-manual-approval-gate-webhook-rhel9@sha256:bb20979bd1b418e5d1fe8776c7508da95eacc18d34e27e759b56bdec5a8d9823
       name: IMAGE_MAG_MANUAL_APPROVAL
     - image: quay.io/openshift-pipeline/pipelines-pruner-controller-rhel9@sha256:589d51ee88c8bf386db02a3d7f89d78cc66a9bd9c7ab7e2ce7c56defea19d39b
       name: IMAGE_PRUNER_CONTROLLER
