@@ -51,7 +51,7 @@ images:
   - name: IMAGE_RESULTS_API
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/results-api-rhel9@sha256:223d8983b60ea443891e8012e3f47a9de2d64e67d212f53b33ab4832fb93055c
   - name: IMAGE_RESULTS_RETENTION_POLICY_AGENT
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/results-retention-policy-agent-rhel9@sha256:d527b88b5d26baf81916f9f47c57d04eab752f49e6ddffee9f54332afb1b529a
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/results-retention-policy-agent-rhel9@sha256:5fc60d22be552fed1b62b0afd062264393e181ac34e69404d68b614c5ddb0ac3
   # tektoncd-cli
   - name: IMAGE_JOB_PRUNER_TKN
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/cli-tkn-rhel9@sha256:6c120617db5240941920b1811f751449ca6d926399590f1972a8750dffaf38bf
