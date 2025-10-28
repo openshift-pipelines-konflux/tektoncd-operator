@@ -81,7 +81,7 @@ images:
   - name: OPENSHIFT_PIPELINES_OPERATOR_CLUSTER_OPERATIONS
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-operator-rhel9@sha256:e7a95053e5a8d37f2e07f9e43583f0eddbd85b5c4ec5cd83d9519c253e7a4140
   - name: IMAGE_PIPELINES_PROXY
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-proxy-rhel9@sha256:9d867972eb1e767c182cada7702c6c5cea0e1ce073e2347a18c28f88688bc641
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-proxy-rhel9@sha256:89ce38e676722356a8441b7837169ba7435d29a50c153066818f219bee027633
   - name: TEKTON_OPERATOR_WEBHOOK
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-webhook-rhel9@sha256:b9f39d17cf4a6ee3c14ed358824ebd95f428c9a5d95505885ec2893d04d1b00c
   # cache
