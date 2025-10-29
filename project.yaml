@@ -15,7 +15,7 @@ images:
   - name: IMAGE_PIPELINES_CONTROLLER # should be RESOLVERS instead
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-resolvers-rhel9@sha256:2f8c76a2f2fb8ecd55e41aade368b266a071945a0860e4cc577db9226c40069a
   - name: IMAGE_PIPELINES_TEKTON_EVENTS_CONTROLLER
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-events-rhel9@sha256:51b6d665fb4121ec04ffc0ea69b144b6b6ccdf983be50139b18e49871ac21b92
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-events-rhel9@sha256:b0273785472a1eb7349a2d786d36a666cdd806be8f14ccc541ce64c94592494e
   - name: IMAGE_PIPELINES_ARG__ENTRYPOINT_IMAGE
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-entrypoint-rhel9@sha256:d1a0626d0bb08241305f812f9ce5c761a37579b64948901359c612f1940f8a20
   - name: IMAGE_PIPELINES_ARG__WORKINGDIRINIT_IMAGE
