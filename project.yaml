@@ -25,7 +25,7 @@ images:
   - name: IMAGE_PIPELINES_ARG__SHELL_IMAGE
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-entrypoint-rhel9@sha256:d1a0626d0bb08241305f812f9ce5c761a37579b64948901359c612f1940f8a20
   - name: IMAGE_PIPELINES_ARG__SIDECARLOGRESULTS_IMAGE
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-sidecarlogresults-rhel9@sha256:8a14460682547b9526a47f4489a596c588f1623db67014f53649a926ff18e450
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-sidecarlogresults-rhel9@sha256:c7cec6ce89c43b155812d718d6fc253c5f6eee38f4d622d10d9939f66b1ec5f5
   # tektoncd-triggers
   - name: IMAGE_TRIGGERS_TEKTON_TRIGGERS_CONTROLLER
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/triggers-controller-rhel9@sha256:6dc8c42b8cb84974799f1029351d848a49855315361c16df9966b491ab7a9ade
