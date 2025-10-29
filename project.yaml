@@ -13,7 +13,7 @@ images:
   - name: IMAGE_PIPELINES_WEBHOOK
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-webhook-rhel9@sha256:681688dffbec32c0af775cc2e812eba3215b411c8afba06cb37ce935d8b91884
   - name: IMAGE_PIPELINES_CONTROLLER # should be RESOLVERS instead
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-resolvers-rhel9@sha256:2f8c76a2f2fb8ecd55e41aade368b266a071945a0860e4cc577db9226c40069a
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-resolvers-rhel9@sha256:c2a69b6c8de449db72f6fe1fadc03622fc74c1b3088458e04cb9b9b21e7d18ea
   - name: IMAGE_PIPELINES_TEKTON_EVENTS_CONTROLLER
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-events-rhel9@sha256:b0273785472a1eb7349a2d786d36a666cdd806be8f14ccc541ce64c94592494e
   - name: IMAGE_PIPELINES_ARG__ENTRYPOINT_IMAGE
