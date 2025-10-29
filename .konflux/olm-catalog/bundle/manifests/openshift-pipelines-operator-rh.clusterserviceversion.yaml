@@ -1291,9 +1291,9 @@ spec:
                       - name: IMAGE_HUB_TEKTON_HUB_DB_MIGRATION
                         value: quay.io/openshift-pipeline/pipelines-hub-db-migration-rhel9@sha256:8f9d4e51ea20705e2a2f1607c6313056a149074b183ca1eacde6056d9ca28d01
                       - name: IMAGE_HUB_TEKTON_HUB_API
-                        value: quay.io/openshift-pipeline/pipelines-hub-api-rhel9@sha256:b1e4518704cdbe5dda3149636dc65ee5739e93cae09391be0664582673537b9c
+                        value: quay.io/openshift-pipeline/pipelines-hub-api-rhel9@sha256:75b94c4ce16e7cafa28dd023cb1eba5085e20ec0e606086950cf0e1d51419f04
                       - name: IMAGE_HUB_TEKTON_HUB_UI
-                        value: quay.io/openshift-pipeline/pipelines-hub-ui-rhel9@sha256:cdf80ed9b9a7daf2a35796001099cbfba396b28997d4be8aa62064aff970deec
+                        value: quay.io/openshift-pipeline/pipelines-hub-ui-rhel9@sha256:1b2caf4fa4f3de2dca37b3396c4ee00497ea7a74821e9052b90bd24f589ae540
                       - name: IMAGE_MAG_TEKTON_TASKGROUP_CONTROLLER
                         value: quay.io/openshift-pipeline/pipelines-manual-approval-gate-controller-rhel9@sha256:ca747c93ed4ac2175652f5a2c2d03e42c179863c7ea41de935ae1b77b7a127d1
                       - name: IMAGE_MAG_MANUAL_APPROVAL
@@ -1309,11 +1309,11 @@ spec:
                       - name: IMAGE_PAC_PAC_CLI
                         value: quay.io/openshift-pipeline/pipelines-pipelines-as-code-cli-rhel9@sha256:4215f2a482fa99a1a07c317c879f330320af9252980ad71621f4681447b0da0b
                       - name: IMAGE_RESULTS_WATCHER
-                        value: quay.io/openshift-pipeline/pipelines-results-watcher-rhel9@sha256:f7393eb8eba14c933c8ea9ed2a7cbe0b0381057aa695b93cad2bd73200bbd6ca
+                        value: quay.io/openshift-pipeline/pipelines-results-watcher-rhel9@sha256:9799df18b67eb4fca1db11fe303607bffc9747625e698b65e3d34c3d40fb1f35
                       - name: IMAGE_RESULTS_API
-                        value: quay.io/openshift-pipeline/pipelines-results-api-rhel9@sha256:5bb94d9c61377bbae57de01637786368966bfcca605eb32a17bbcf97942bc2c3
+                        value: quay.io/openshift-pipeline/pipelines-results-api-rhel9@sha256:223d8983b60ea443891e8012e3f47a9de2d64e67d212f53b33ab4832fb93055c
                       - name: IMAGE_RESULTS_RETENTION_POLICY_AGENT
-                        value: quay.io/openshift-pipeline/pipelines-results-retention-policy-agent-rhel9@sha256:d527b88b5d26baf81916f9f47c57d04eab752f49e6ddffee9f54332afb1b529a
+                        value: quay.io/openshift-pipeline/pipelines-results-retention-policy-agent-rhel9@sha256:5fc60d22be552fed1b62b0afd062264393e181ac34e69404d68b614c5ddb0ac3
                       - name: IMAGE_ADDONS_MAVEN_GOALS
                         value: registry.redhat.io/ubi9/openjdk-17@sha256:cdbd64ba1b7826d09bc180fa19aa6fbc09ddb5bff5e02b7e1351353bbabebb78
                       - name: IMAGE_PIPELINES_CONSOLE_PLUGIN
@@ -1555,9 +1555,9 @@ spec:
       name: IMAGE_RESULTS_POSTGRES
     - image: quay.io/openshift-pipeline/pipelines-hub-db-migration-rhel9@sha256:8f9d4e51ea20705e2a2f1607c6313056a149074b183ca1eacde6056d9ca28d01
       name: IMAGE_HUB_TEKTON_HUB_DB_MIGRATION
-    - image: quay.io/openshift-pipeline/pipelines-hub-api-rhel9@sha256:b1e4518704cdbe5dda3149636dc65ee5739e93cae09391be0664582673537b9c
+    - image: quay.io/openshift-pipeline/pipelines-hub-api-rhel9@sha256:75b94c4ce16e7cafa28dd023cb1eba5085e20ec0e606086950cf0e1d51419f04
       name: IMAGE_HUB_TEKTON_HUB_API
-    - image: quay.io/openshift-pipeline/pipelines-hub-ui-rhel9@sha256:cdf80ed9b9a7daf2a35796001099cbfba396b28997d4be8aa62064aff970deec
+    - image: quay.io/openshift-pipeline/pipelines-hub-ui-rhel9@sha256:1b2caf4fa4f3de2dca37b3396c4ee00497ea7a74821e9052b90bd24f589ae540
       name: IMAGE_HUB_TEKTON_HUB_UI
     - image: quay.io/openshift-pipeline/pipelines-manual-approval-gate-controller-rhel9@sha256:ca747c93ed4ac2175652f5a2c2d03e42c179863c7ea41de935ae1b77b7a127d1
       name: IMAGE_MAG_TEKTON_TASKGROUP_CONTROLLER
@@ -1573,11 +1573,11 @@ spec:
       name: IMAGE_PAC_PAC_WATCHER
     - image: quay.io/openshift-pipeline/pipelines-pipelines-as-code-cli-rhel9@sha256:4215f2a482fa99a1a07c317c879f330320af9252980ad71621f4681447b0da0b
       name: IMAGE_PAC_PAC_CLI
-    - image: quay.io/openshift-pipeline/pipelines-results-watcher-rhel9@sha256:f7393eb8eba14c933c8ea9ed2a7cbe0b0381057aa695b93cad2bd73200bbd6ca
+    - image: quay.io/openshift-pipeline/pipelines-results-watcher-rhel9@sha256:9799df18b67eb4fca1db11fe303607bffc9747625e698b65e3d34c3d40fb1f35
       name: IMAGE_RESULTS_WATCHER
-    - image: quay.io/openshift-pipeline/pipelines-results-api-rhel9@sha256:5bb94d9c61377bbae57de01637786368966bfcca605eb32a17bbcf97942bc2c3
+    - image: quay.io/openshift-pipeline/pipelines-results-api-rhel9@sha256:223d8983b60ea443891e8012e3f47a9de2d64e67d212f53b33ab4832fb93055c
       name: IMAGE_RESULTS_API
-    - image: quay.io/openshift-pipeline/pipelines-results-retention-policy-agent-rhel9@sha256:d527b88b5d26baf81916f9f47c57d04eab752f49e6ddffee9f54332afb1b529a
+    - image: quay.io/openshift-pipeline/pipelines-results-retention-policy-agent-rhel9@sha256:5fc60d22be552fed1b62b0afd062264393e181ac34e69404d68b614c5ddb0ac3
       name: IMAGE_RESULTS_RETENTION_POLICY_AGENT
     - image: registry.redhat.io/ubi9/openjdk-17@sha256:cdbd64ba1b7826d09bc180fa19aa6fbc09ddb5bff5e02b7e1351353bbabebb78
       name: IMAGE_ADDONS_PARAM_MAVEN_IMAGE
