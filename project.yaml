@@ -9,7 +9,7 @@ versions:
 images:
   # tektoncd-pipeline
   - name: IMAGE_PIPELINES_TEKTON_PIPELINES_CONTROLLER
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-controller-rhel9@sha256:0abf76f8634b27950481a394f977a393cc5aeafa754138d8f76f4bc781d9c564
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-controller-rhel9@sha256:03c644a7507caca50f261812d69d8eb7151809a9cb9b5139c602202578d34cf5
   - name: IMAGE_PIPELINES_WEBHOOK
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-webhook-rhel9@sha256:681688dffbec32c0af775cc2e812eba3215b411c8afba06cb37ce935d8b91884
   - name: IMAGE_PIPELINES_CONTROLLER # should be RESOLVERS instead
