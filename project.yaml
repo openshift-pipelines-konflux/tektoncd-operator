@@ -21,7 +21,7 @@ images:
   - name: IMAGE_PIPELINES_ARG__WORKINGDIRINIT_IMAGE
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-workingdirinit-rhel9@sha256:f0e53a6404eb1393a78dfc38eb2289a9c06e6f30ea0279633b171654931afca8
   - name: IMAGE_PIPELINES_ARG__NOP_IMAGE
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-nop-rhel9@sha256:c34c6a54c7b34c9aff0ccf40bde9a8898322e5001e4c7d52e48bb33a6dc0208e
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-nop-rhel9@sha256:0252bf1a68b99988f5a48b167a69129334c40e6cfb3de643a92398a11915ab4b
   - name: IMAGE_PIPELINES_ARG__SHELL_IMAGE
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipeline-entrypoint-rhel9@sha256:d1a0626d0bb08241305f812f9ce5c761a37579b64948901359c612f1940f8a20
   - name: IMAGE_PIPELINES_ARG__SIDECARLOGRESULTS_IMAGE
