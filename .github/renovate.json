@@ -19,7 +19,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["*"],
-      "automerge": false
+      "automerge": true
     }
   ]
 }
