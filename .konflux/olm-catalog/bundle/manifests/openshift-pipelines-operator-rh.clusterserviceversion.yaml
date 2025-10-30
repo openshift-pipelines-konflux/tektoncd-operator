@@ -1223,7 +1223,7 @@ spec:
                       - name: IMAGE_PIPELINES_WEBHOOK
                         value: quay.io/openshift-pipeline/pipelines-webhook-rhel9@sha256:ca39efa5533827102f2b848aa64cd5c91691972e853b5ce17ba6a42744e88498
                       - name: IMAGE_PIPELINES_CONTROLLER
-                        value: quay.io/openshift-pipeline/pipelines-resolvers-rhel9@sha256:c2a69b6c8de449db72f6fe1fadc03622fc74c1b3088458e04cb9b9b21e7d18ea
+                        value: quay.io/openshift-pipeline/pipelines-resolvers-rhel9@sha256:cbdc3da63a722ccdf58eed3c9ec84e7c0fda1855b5b92823e8cecc2ab2352ff5
                       - name: IMAGE_PIPELINES_TEKTON_EVENTS_CONTROLLER
                         value: quay.io/openshift-pipeline/pipelines-events-rhel9@sha256:b0273785472a1eb7349a2d786d36a666cdd806be8f14ccc541ce64c94592494e
                       - name: IMAGE_PIPELINES_ARG__ENTRYPOINT_IMAGE
@@ -1469,7 +1469,7 @@ spec:
       name: IMAGE_PIPELINES_TEKTON_PIPELINES_CONTROLLER
     - image: quay.io/openshift-pipeline/pipelines-webhook-rhel9@sha256:ca39efa5533827102f2b848aa64cd5c91691972e853b5ce17ba6a42744e88498
       name: IMAGE_PIPELINES_WEBHOOK
-    - image: quay.io/openshift-pipeline/pipelines-resolvers-rhel9@sha256:c2a69b6c8de449db72f6fe1fadc03622fc74c1b3088458e04cb9b9b21e7d18ea
+    - image: quay.io/openshift-pipeline/pipelines-resolvers-rhel9@sha256:cbdc3da63a722ccdf58eed3c9ec84e7c0fda1855b5b92823e8cecc2ab2352ff5
       name: IMAGE_PIPELINES_CONTROLLER
     - image: quay.io/openshift-pipeline/pipelines-events-rhel9@sha256:b0273785472a1eb7349a2d786d36a666cdd806be8f14ccc541ce64c94592494e
       name: IMAGE_PIPELINES_TEKTON_EVENTS_CONTROLLER
