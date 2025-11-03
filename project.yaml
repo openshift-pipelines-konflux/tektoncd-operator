@@ -70,7 +70,7 @@ images:
   - name: IMAGE_PAC_PAC_CONTROLLER
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-as-code-controller-rhel9@sha256:183c022418e1da066cea584f4827dbd665a5defeecf98fe0f74467571e9f05b9
   - name: IMAGE_PAC_PAC_WEBHOOK
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-as-code-webhook-rhel9@sha256:6b3ea894ffc514e51c6d4a10ea663d9ab07c04c89882f636643c96585ca2f114
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-as-code-webhook-rhel9@sha256:fe46375475fb4f15ff68e279de9631cccd84718163d217c2a1802c2d9768729b
   - name: IMAGE_PAC_PAC_WATCHER
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-as-code-watcher-rhel9@sha256:65ecc2c0f0ae6a3ae47bb39207d5616064a2bb727f13201e8742bdf43ae20dde
   - name: IMAGE_PAC_PAC_CLI
