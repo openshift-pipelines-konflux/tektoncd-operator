@@ -65,7 +65,7 @@ images:
   - name: IMAGE_MAG_MANUAL_APPROVAL
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/manual-approval-gate-webhook-rhel9@sha256:bb20979bd1b418e5d1fe8776c7508da95eacc18d34e27e759b56bdec5a8d9823
   - name: IMAGE_MAG_TEKTON_TASKGROUP_CONTROLLER
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/manual-approval-gate-controller-rhel9@sha256:ca747c93ed4ac2175652f5a2c2d03e42c179863c7ea41de935ae1b77b7a127d1
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/manual-approval-gate-controller-rhel9@sha256:52c4afc34d382b1df194aff4afe1910dce025f5988d30b2cb5277fab25cfff52
   # pipelines-as-code
   - name: IMAGE_PAC_PAC_CONTROLLER
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-as-code-controller-rhel9@sha256:183c022418e1da066cea584f4827dbd665a5defeecf98fe0f74467571e9f05b9
