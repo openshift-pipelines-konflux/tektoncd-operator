@@ -4,7 +4,7 @@ kind: PipelineRun
 metadata:
   annotations:
     pipelinesascode.tekton.dev/cancel-in-progress: "true" # Cancel in-progress pipelines
-    build.appstudio.openshift.io/repo: https://github.com/openshift-pipelines/tektoncd-operator.git?rev={{revision}}
+    build.appstudio.openshift.io/repo: https://github.com/openshift-pipelines-konflux/tektoncd-operator.git?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
     build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
