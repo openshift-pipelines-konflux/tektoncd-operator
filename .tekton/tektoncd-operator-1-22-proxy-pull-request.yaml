@@ -7,19 +7,19 @@ metadata:
     pipelinesascode.tekton.dev/pipeline: "https://raw.githubusercontent.com/openshift-pipelines/operator/refs/heads/main/.tekton/docker-build-ta.yaml"
     build.appstudio.openshift.io/repo: https://github.com/openshift-pipelines-konflux/tektoncd-operator.git?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
+    build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/max-keep-runs: "3"
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "main" &&
+    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
+      == "release-v1.22.x" &&
       ("upstream/***".pathChanged() || ".konflux/patches/***".pathChanged() || ".konflux/rpms/***".pathChanged() ||
-      ".konflux/dockerfiles/proxy.Dockerfile".pathChanged() || ".tekton/*build*.yaml".pathChanged() ||
-      ".tekton/tektoncd-operator-main-proxy-push.yaml".pathChanged())
-  creationTimestamp: null
+      ".konflux/dockerfiles/proxy.Dockerfile".pathChanged() ||
+      ".tekton/tektoncd-operator-1-22-proxy-pull-request.yaml".pathChanged())
   labels:
-    appstudio.openshift.io/application: openshift-pipelines-operator-main
-    appstudio.openshift.io/component: tektoncd-operator-main-proxy
+    appstudio.openshift.io/application: openshift-pipelines-operator-1-22
+    appstudio.openshift.io/component: tektoncd-operator-1-22-proxy
     pipelines.appstudio.openshift.io/type: build
-  name: tektoncd-operator-main-proxy-on-push
+  name: tektoncd-operator-1-22-proxy-on-pull-request
   namespace: tekton-ecosystem-tenant
 spec:
   params:
@@ -28,16 +28,21 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-proxy-rhel9:{{revision}}
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-proxy-rhel9:on-pr-{{revision}}
+  - name: image-expires-after
+    value: 5d
   - name: dockerfile
     value: .konflux/dockerfiles/proxy.Dockerfile
+  - name: build-platforms
+    value:
+    - linux/x86_64
   - name: prefetch-input
     value: |
       {"type": "rpm", "path": ".konflux/rpms"}
   pipelineRef:
     name: docker-build-ta
   taskRunTemplate:
-    serviceAccountName: build-pipeline-tektoncd-operator-main-proxy
+    serviceAccountName: build-pipeline-tektoncd-operator-proxy-1-22
   workspaces:
   - name: git-auth
     secret:
