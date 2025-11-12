@@ -17,7 +17,7 @@ metadata:
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: openshift-pipelines-operator-next
-    appstudio.openshift.io/component: tektoncd-operator-next-webhook
+    appstudio.openshift.io/component: tektoncd-operator-webhook-next
     pipelines.appstudio.openshift.io/type: build
   name: tektoncd-operator-next-webhook-on-push
   namespace: tekton-ecosystem-tenant
