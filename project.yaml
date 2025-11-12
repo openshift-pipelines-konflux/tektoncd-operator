@@ -37,7 +37,7 @@ images:
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/triggers-eventlistenersink-rhel9@sha256:46521934431705d6806dd366fdd37ec1751dd0f717af0832246f078e3e98e419
   # tektoncd-chains
   - name: IMAGE_CHAINS_TEKTON_CHAINS_CONTROLLER
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/chains-controller-rhel9@sha256:d79ecf761eced88870a7f8da67e49bb5087454f2d04d80072559e0465efec72d
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/chains-controller-rhel9@sha256:26133c435407561b47db06344778e9c220730914abfb0ce6c1b89785e822a1cb
   # tektoncd-hub
   - name: IMAGE_HUB_TEKTON_HUB_DB_MIGRATION
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/hub-db-migration-rhel9@sha256:36284aac370511d868ad47c2cf8be0bcf33a8c66a466ff927059701c53e6a4ca
