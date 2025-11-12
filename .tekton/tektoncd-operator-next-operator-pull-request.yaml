@@ -12,13 +12,13 @@ metadata:
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
       == "main" &&
       ("upstream/***".pathChanged() || ".konflux/patches/***".pathChanged() || ".konflux/rpms/***".pathChanged() ||
-      ".konflux/dockerfiles/webhook.Dockerfile".pathChanged() || ".tekton/*build*.yaml".pathChanged() ||
-      ".tekton/tektoncd-operator-main-webhook-pull-request.yaml".pathChanged())
+      ".konflux/dockerfiles/operator.Dockerfile".pathChanged() || ".tekton/*build*.yaml".pathChanged() ||
+      ".tekton/tektoncd-operator-next-operator-pull-request.yaml".pathChanged())
   labels:
-    appstudio.openshift.io/application: openshift-pipelines-operator-main
-    appstudio.openshift.io/component: tektoncd-operator-main-webhook
+    appstudio.openshift.io/application: openshift-pipelines-operator-next
+    appstudio.openshift.io/component: tektoncd-operator-next-operator
     pipelines.appstudio.openshift.io/type: build
-  name: tektoncd-operator-main-webhook-on-pull-request
+  name: tektoncd-operator-next-operator-on-pull-request
   namespace: tekton-ecosystem-tenant
 spec:
   params:
@@ -27,11 +27,11 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-webhook-rhel9:on-pr-{{revision}}
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-operator-rhel9:on-pr-{{revision}}
   - name: image-expires-after
     value: 5d
   - name: dockerfile
-    value: .konflux/dockerfiles/webhook.Dockerfile
+    value: .konflux/dockerfiles/operator.Dockerfile
   - name: build-platforms
     value:
     - linux/x86_64
@@ -41,7 +41,7 @@ spec:
   pipelineRef:
     name: docker-build-ta
   taskRunTemplate:
-    serviceAccountName: build-pipeline-tektoncd-operator-main-webhook
+    serviceAccountName: build-pipeline-tektoncd-operator-operator-next
   workspaces:
   - name: git-auth
     secret:
