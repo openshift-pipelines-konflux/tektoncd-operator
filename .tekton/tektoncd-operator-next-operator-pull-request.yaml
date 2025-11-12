@@ -16,7 +16,7 @@ metadata:
       ".tekton/tektoncd-operator-next-operator-pull-request.yaml".pathChanged())
   labels:
     appstudio.openshift.io/application: openshift-pipelines-operator-next
-    appstudio.openshift.io/component: tektoncd-operator-next-operator
+    appstudio.openshift.io/component: tektoncd-operator-operator-next
     pipelines.appstudio.openshift.io/type: build
   name: tektoncd-operator-next-operator-on-pull-request
   namespace: tekton-ecosystem-tenant

@@ -17,7 +17,7 @@ metadata:
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: openshift-pipelines-operator-next
-    appstudio.openshift.io/component: tektoncd-operator-next-proxy
+    appstudio.openshift.io/component: tektoncd-operator-proxy-next
     pipelines.appstudio.openshift.io/type: build
   name: tektoncd-operator-next-proxy-on-push
   namespace: tekton-ecosystem-tenant
