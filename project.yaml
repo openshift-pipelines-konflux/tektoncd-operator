@@ -110,4 +110,4 @@ images:
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-bundle-rhel9@sha256:e27769ecc6b6d16e8f62922a0ad4c3cb684e3a72c2f30baafe4d5a4187ceefac
   # Pruner
   - name: IMAGE_PRUNER_CONTROLLER
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pruner-controller-rhel9@sha256:857ec6678f770dfee2b9b86b78dc6ec5fec0ebbc18242bdebd63a432e1dea94c
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pruner-controller-rhel9@sha256:e510dba71131accdc2dd1fc3407d0db15e0054eb373b64cc64bd9ed1950472cb
