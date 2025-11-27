@@ -44,7 +44,7 @@ images:
   - name: IMAGE_HUB_TEKTON_HUB_API
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/hub-api-rhel9@sha256:cade111440f4d0227b5135fec32e4b6e4c4619a1589ac091f28753e8c3088cd4
   - name: IMAGE_HUB_TEKTON_HUB_UI
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/hub-ui-rhel9@sha256:5521517a6325ce9333376c883dc0c2681b4b32646e2e2b3b18048f547429c4df
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/hub-ui-rhel9@sha256:f1e00e82f020cc7ee91f76287896b71fd441b2a1a4358043608f02bc0b6a4863
   # tektoncd-results
   - name: IMAGE_RESULTS_WATCHER
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/results-watcher-rhel9@sha256:e01dcb89914b73118f0e6df5e5cd7509815a2175d4a17bdebb013ff73985adb4
