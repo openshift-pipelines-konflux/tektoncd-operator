@@ -4,21 +4,22 @@ kind: PipelineRun
 metadata:
   annotations:
     pipelinesascode.tekton.dev/cancel-in-progress: "true" # Cancel in-progress pipelines
+    pipelinesascode.tekton.dev/pipeline: "https://raw.githubusercontent.com/openshift-pipelines/operator/refs/heads/main/.tekton/docker-build-ta.yaml"
     build.appstudio.openshift.io/repo: https://github.com/openshift-pipelines-konflux/tektoncd-operator.git?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
     build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "main" &&
-      ("upstream/***".pathChanged() || ".konflux/patches/***".pathChanged() || ".konflux/rpms/***".pathChanged() ||
-      ".konflux/dockerfiles/proxy.Dockerfile".pathChanged() || ".tekton/*build*.yaml".pathChanged() ||
-      ".tekton/tektoncd-operator-main-proxy-pull-request.yaml".pathChanged())
+      == "release-v1.22.x" &&
+      ((".konflux/patches/***".pathChanged() || ".konflux/olm-catalog/bundle/***".pathChanged()) ||
+      ".konflux/olm-catalog/bundle/Dockerfile".pathChanged() ||
+      ".tekton/tektoncd-operator-1-22-bundle-pull-request.yaml".pathChanged())
   labels:
-    appstudio.openshift.io/application: openshift-pipelines-operator-main
-    appstudio.openshift.io/component: tektoncd-operator-main-proxy
+    appstudio.openshift.io/application: openshift-pipelines-operator-1-22
+    appstudio.openshift.io/component: tektoncd-operator-1-22-bundle
     pipelines.appstudio.openshift.io/type: build
-  name: tektoncd-operator-main-proxy-on-pull-request
+  name: tektoncd-operator-1-22-bundle-on-pull-request
   namespace: tekton-ecosystem-tenant
 spec:
   params:
@@ -27,21 +28,24 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-proxy-rhel9:on-pr-{{revision}}
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/operator-bundle-rhel9:on-pr-{{revision}}
   - name: image-expires-after
     value: 5d
   - name: dockerfile
-    value: .konflux/dockerfiles/proxy.Dockerfile
+    value: .konflux/olm-catalog/bundle/Dockerfile
   - name: build-platforms
     value:
     - linux/x86_64
+  - name: build-image-index
+    value: false
+  
   - name: prefetch-input
     value: |
       {"type": "rpm", "path": ".konflux/rpms"}
   pipelineRef:
     name: docker-build-ta
   taskRunTemplate:
-    serviceAccountName: build-pipeline-tektoncd-operator-main-proxy
+    serviceAccountName: build-pipeline-tektoncd-operator-bundle-1-22
   workspaces:
   - name: git-auth
     secret:
